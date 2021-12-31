@@ -1,4 +1,4 @@
-/* GFG solution for the problem of overlapping rectangles using c++*/
+/* GFG solution for the problem of overlapping rectangles using c++  */
 
 class Solution {
   public:
