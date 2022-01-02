@@ -1,0 +1,27 @@
+class Solution{
+  public:
+    vector<vector<string> > Anagrams(vector<string>& a) {
+        
+        //code here
+        // create a map/ unordered map
+        map<string,vector<string>>m;
+        
+        // interate over the given array sort each word and map it 
+        // original word
+        for(int i=0;i<a.size();i++)
+        {
+           string s = a[i];
+           sort(s.begin(),s.end());
+           m[s].push_back(a[i]);
+        }
+        
+        //storing the map values in a vector 
+        vector<vector<string> > v;
+        for(auto i:m)
+        {
+            v.push_back(i.second);     
+        }
+        
+        //return 
+        return v;
+    }
