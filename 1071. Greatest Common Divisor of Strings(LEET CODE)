@@ -1,0 +1,15 @@
+# -6Companies30Days
+class Solution {
+public:
+    string gcdOfStrings(const string& s1, const string& s2)
+    {
+        int a = s1.size();
+        int b = s2.size();
+        if(s1 + s2 != s2 + s1)
+        {
+            return "";
+        }
+        return s1.substr(0,__gcd(a,b));
+        
+    }
+};
