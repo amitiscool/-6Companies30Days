@@ -1,0 +1,16 @@
+# -6Companies30Days
+class Solution {
+  public:
+    long long squaresInChessBoard(long long n) {
+        // code here
+        
+        long long ans = 0;
+        
+        while(n>=1)
+        {
+            ans  =  ans + n*n;
+            n--;
+        }
+        return ans;
+    }
+};
